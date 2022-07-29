@@ -19,7 +19,7 @@
   </script>
 </head>
 <body> 
-    <header>
+    <header class="container mx-auto">
         <!-- Navigation Bar -->
         <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 h-16 md:h-20">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
@@ -103,7 +103,71 @@
                 </span>
             </button>
         </div>
-        </header>
+    </header>
+    <!-- Main Section -->
+    <main class="container mx-auto">
+        <!-- Courses Section -->
+        <section class="py-8 sm:py-16 md:py-20 lg:py-32 space-y-10 text-center">
+            <!-- courses -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- course 1 -->
+                <div class="flex flex-col sm:flex-row items-center mx-4 sm:mx-0 border border-gray-200 shadow-lg rounded">
+                    <img class="w-full sm:w-auto" src="assets/course/course-1.png" alt="course">
+                    <div class="text-left pt-3 sm:pt-0 px-4 sm:px-5 my-3 sm:my-0 py-8 sm:py-0">
+                        <h2 class="text-2xl font-bold">Fundamental of UI/UX Design</h2>
+                        <p class="text-gray-500 font-semibold">Clear your concepts of UI/UX Design and Start creating beautiful intefaces today</p>
+                        <p class="text-xl font-semibold text-blue-500">Price: 20$</p>
+                    </div>
+                </div>
+                <!-- course 2 -->
+                <div class="flex flex-col sm:flex-row items-center mx-4 sm:mx-0 border border-gray-200 shadow-lg rounded">
+                    <img class="w-full sm:w-auto" src="assets/course/course-2.png" alt="course">
+                    <div class="text-left pt-3 sm:pt-0 px-4 sm:px-5 my-3 sm:my-0 py-8 sm:py-0">
+                        <h2 class="text-2xl font-bold">JavaScript Basic to Advanced</h2>
+                        <p class="text-gray-500 font-semibold">Clear your concepts of JavaScript and ease your journey today</p>
+                        <p class="text-xl font-semibold text-blue-500">Price: 20$</p>
+                    </div>
+                </div>
+                <!-- course 3 -->
+                <div class="flex flex-col sm:flex-row items-center mx-4 sm:mx-0 border border-gray-200 shadow-lg rounded">
+                    <img class="w-full sm:w-auto" src="assets/course/course-3.png" alt="course">
+                    <div class="text-left pt-3 sm:pt-0 px-4 sm:px-5 my-3 sm:my-0 py-8 sm:py-0">
+                        <h2 class="text-2xl font-bold">Full Stack Web Development</h2>
+                        <p class="text-gray-500 font-semibold">Clear your concepts of fullstack web development and Start building interactive sites today</p>
+                        <p class="text-xl font-semibold text-blue-500">Price: 20$</p>
+                    </div>
+                </div>
+                <!-- course 4 -->
+                <div class="hidden flex-col sm:flex-row items-center mx-4 sm:mx-0 border border-gray-200 shadow-lg rounded lg:flex">
+                    <img class="w-full sm:w-auto" src="assets/course/course-4.png" alt="course">
+                    <div class="text-left pt-3 sm:pt-0 px-4 sm:px-5 my-3 sm:my-0 py-8 sm:py-0">
+                        <h2 class="text-2xl font-bold">Digital Marketing</h2>
+                        <p class="text-gray-500 font-semibold">Clear your concepts of Digital Marketing and Start generating revenues today</p>
+                        <p class="text-xl font-semibold text-blue-500">Price: 20$</p>
+                    </div>
+                </div>
+                <!-- course 5 -->
+                <div class="flex-col sm:flex-row items-center mx-4 sm:mx-0 border border-gray-200 shadow-lg rounded hidden lg:flex">
+                    <img class="w-full sm:w-auto" src="assets/course/course-5.png" alt="course">
+                    <div class="text-left pt-3 sm:pt-0 px-4 sm:px-5 my-3 sm:my-0 py-8 sm:py-0">
+                        <h2 class="text-2xl font-bold">Photography Basic Rules</h2>
+                        <p class="text-gray-500 font-semibold">Clear your concepts of Photography and Start capturing breathtaking photos today</p>
+                        <p class="text-xl font-semibold text-blue-500">Price: 20$</p>
+                    </div>
+                </div>
+                <!-- course 6 -->
+                <div class="flex-col sm:flex-row items-center mx-4 sm:mx-0 border border-gray-200 shadow-lg rounded hidden lg:flex">
+                    <img class="w-full sm:w-auto" src="assets/course/course-6.png" alt="course">
+                    <div class="text-left pt-3 sm:pt-0 px-4 sm:px-5 my-3 sm:my-0 py-8 sm:py-0">
+                        <h2 class="text-2xl font-bold">Motion Graphics</h2>
+                        <p class="text-gray-500 font-semibold">Clear your concepts of Motion Graphics and Start creating goergeous motion graphics today</p>
+                        <p class="text-xl font-semibold text-blue-500">Price: 20$</p>
+                    </div>
+                </div>
+            </div>
+            <button class="px-5 py-2 mt-2 sm:mt-0 rounded font-semibold bg-blue-500 text-white hover:bg-blue-600 border-0">See More Courses</button>
+        </section>
+    </main>
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 </html>
