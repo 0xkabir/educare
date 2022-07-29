@@ -19,42 +19,91 @@
   </script>
 </head>
 <body> 
-    <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200">
-        <div class="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="#" class="flex items-center">
-            <span class="self-center text-xl font-semibold whitespace-nowrap">EduCare</span>
-        </a>
-        <div class="flex md:order-2">
-            <button type="button" class="text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Register</button>
-            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-        </button>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="bg-white px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 h-16 md:h-20">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap">EduCare</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" class="text-blue-500 border border-blue-500 hover:bg-blue-500 hover:text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Register</button>
+                <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+            </div>
+            <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Home</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Courses</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Deals</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Success</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">About</a>
+                </li>
+                <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Register</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Slider Section -->
+        <div id="animation-carousel" class="relative z-0" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="overflow-hidden relative h-60 sm:h-[300px] md:h-[500px] lg:h-[600px] mt-12 md:mt-20">
+                <!-- Slide 1 -->
+                <div class="hidden duration-200 ease-linear absolute inset-0 transition-all transform" data-carousel-item="">
+                    <img src="assets/cover/cover-1.png" class="block md:h-[600px] brightness-50 object-cover object-top top-1/2 relative left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    <div class="left-1/4 w-1/2 mx-auto text-center sm:space-y-2 flex flex-col absolute top-1/4 h-1/2 z-30 justify-center items-center">
+                        <h1 class="text-lg sm:text-4xl md:text-5xl lg:text-6xl text-bold text-white relative">Get Started Digital Learning</h1>
+                        <p class="text-gray-300">Willing to gain a new skill! Grab one of our world class courses and kickstart your learning!!</p>
+                        <button class="px-5 py-2 mt-2 sm:mt-0 rounded font-semibold bg-blue-500 text-white hover:bg-blue-600 border-0">Get Started</button>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="duration-200 ease-linear absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+                    <img src="assets/cover/cover-2.png" class="block absolute md:h-[600px] brightness-50 object-cover object-top top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    <div class="left-1/4 w-1/2 mx-auto text-center sm:space-y-2 flex flex-col absolute top-1/4 h-1/2 z-30 justify-center items-center">
+                        <h1 class="text-lg sm:text-4xl md:text-5xl lg:text-6xl text-bold text-white relative">Get Started Digital Learning</h1>
+                        <p class="text-gray-300">Willing to gain a new skill! Grab one of our world class courses and kickstart your learning!!</p>
+                        <button class="px-5 py-2 mt-2 sm:mt-0 rounded font-semibold bg-blue-500 text-white hover:bg-blue-600 border-0">Get Started</button>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="duration-200 ease-linear absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+                    <img src="assets/cover/cover-3.png" class="block absolute md:h-[600px] brightness-50 object-cover object-top top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    <div class="left-1/4 w-1/2 mx-auto text-center sm:space-y-2 flex flex-col absolute top-1/4 h-1/2 z-30 justify-center items-center">
+                        <h1 class="text-lg sm:text-4xl md:text-5xl lg:text-6xl text-bold text-white relative">Get Started Digital Learning</h1>
+                        <p class="text-gray-300">Willing to gain a new skill! Grab one of our world class courses and kickstart your learning!!</p>
+                        <button class="px-5 py-2 mt-2 sm:mt-0 rounded font-semibold bg-blue-500 text-white hover:bg-blue-600 border-0">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev="">
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next="">
+                <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
-        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-            <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Home</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Courses</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Deals</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Success</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">About</a>
-            </li>
-            <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white text-base bg-blue-500 rounded md:bg-transparent md:text-gray-500 hover:md:text-blue-500 md:p-0" aria-current="page">Register</a>
-            </li>
-        </ul>
-        </div>
-        </div>
-    </nav>
+        </header>
     <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 </html>
